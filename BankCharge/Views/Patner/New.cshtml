@@ -1,0 +1,142 @@
+﻿@model BankCharge.Models.Patner
+@{
+    ViewData["Title"] = "New";
+}
+<h2>New</h2>
+<section class="container-fluid p-o">
+    <div style="background:white">
+        <div class="col-md-12">
+            <div class="module-tabs">
+                <div class="col-md-3">
+                    <div class="module-tabs">
+                        <h3>Add Patner Bank</h3>
+                    </div>
+
+                </div>
+                <div class="col-md-9">
+                    <ul class="nav nav-pills  module-tabs" style="float:right">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/patner/index"><h3>Overview</h3></a>
+                        </li>
+                    </ul>
+                </div>
+                <br />
+                <div class="col-md-12">
+                    <form>
+                        <div class="col-md-12 column mytable">
+                            <table class="table table-bordered table-hover mytable" id="tab_logic">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            #
+                                        </th>
+                                        <th class="text-center">
+                                            Bank Name
+                                        </th>
+                                        <th class="text-center">
+                                            Patner Name
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="mybody">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <select class="form-control js-example-tags" id="banklist">
+                                                <option selected="selected"></option>
+                                                @foreach (var item in ViewBag.Bank)
+                                                {
+                                                    <option value="@item.BankId">@item.Name</option>
+                                                }
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select class="form-control js-example-basic-multiple" multiple="multiple" id="patnerlist">
+                                                
+                                                @foreach (var item in ViewBag.Bank)
+                                                {
+                                                    <option value="@item.BankId">@item.Name</option>
+                                                }
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-1">
+                            <a id="add_row" class="btn btn-default pull-left form-control" style="background-color:#ff6a00;color:white">Add Row</a>
+                        </div>
+                        <div class="col-md-1">
+                            <a id='delete_row' class="pull-right btn btn-default form-control" style="background-color:#777;color:white">Delete Row</a>
+                        </div>
+                        <div class="col-md-9"></div>
+                        <div class="col-md-1">
+                            <input type="button" class="btn btn-success float-right form-control" style="background-color:#ff6a00;margin-top: 5px;" id="btnsave" value="Save" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".js-example-tags").select2({
+            tags: true
+        });
+        $(document).ready(function () {
+        $('.js-example-basic-multiple').select2();
+    });
+        var i = 0;
+        $("#add_row").click(function () {
+            $('#addr' + i).html("<td>" + (i + 1) + "</td><td><select class='form-control js-example-tags mynextlist" + (i + 1) + "' ></select></td><td><select  class='form-control js-example-basic-multiple mysecondlist" + (i+1) + "' multiple=multiple></select></td>");
+            $('#tab_logic').append('<tr id="addr' + (i + 1) + '"></tr>');
+            $(".js-example-tags").select2({
+                tags: true
+            });
+            $('.js-example-basic-multiple').select2();
+            var list = $(".js-example-tags").html();
+             var list1 = $(".js-example-basic-multiple").html();
+            $(".mynextlist" + (i+1) + "").append(list);
+             $(".mysecondlist" + (i+1) + "").append(list1);
+            i++;
+        });
+        $("#delete_row").click(function () {
+            if (i > 1) {
+                $("#addr" + (i - 1)).html('');
+                i--;
+            }
+        });
+    });
+    $("#btnsave").on('click', function () {
+
+        var patners = [];
+        $(".table tbody").find('tr').each(function (i) {
+            var patner = {};
+            patner.BankId = $(this).find("td").find(".js-example-tags").val();
+            patner.PatnerId = $(this).find("td").find(".js-example-basic-multiple").val().toString();
+            patners.push(patner);
+        });
+        $.ajax({
+            type: "POST",
+            url: "/Patner/New",
+            data: { patners: patners },
+            success: function (r) {
+                alert("Insert All Patner Successfully");
+                window.location.href = "/Patner/Index";
+            }
+        });
+    });
+</script>
+
+
+
+
+
+

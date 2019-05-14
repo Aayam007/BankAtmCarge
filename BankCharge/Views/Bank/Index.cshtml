@@ -1,0 +1,73 @@
+﻿@model IEnumerable<BankCharge.Models.Bank>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="content-header">
+    <h1>
+        Bank
+
+    </h1>
+</section>
+
+<section>
+    <h4 align="right">
+        <a href="/Bank/New"><i class="fa fa-plus-square" aria-hidden="true">Add Bank</i> </a>
+    </h4>
+    <div>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+        <br />
+
+        <br />
+        <table class="table table-responsive table-striped table-bordered table-hover table-condensed " id="mytable">
+            <thead>
+                <tr style="background-color:cadetblue">
+                    <th style="width:200px; ">Bank Name</th>
+                    <th>Image</th>
+                    <th>Charge</th>
+                    <th>CardType</th>
+                    <th>Action</th>
+                   
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@Html.DisplayFor(model => item.Name)</td>
+                    <td><img class="img-responsive" src="@item.Image" alt="sala image aayena" height="50" width="50" style="border-radius:50%" /></td>
+                    <td>@Html.DisplayFor(model => item.Charge)</td>
+                    <td>@Html.DisplayFor(model => item.CardType)</td>
+                    
+                    <td>
+                        <a href="/Bank/EditBank?id=@item.BankId"><i class="fa fa-pencil-square-o" aria-hidden="true" style="color:green;margin:5px; "></i>edit</a>|
+                        <a href="/Bank/DeleteBank?id=@item.BankId"><i class="fa fa-trash-o" aria-hidden="true" style="color:red; margin:5px;"></i>delete</a>
+                    </td>
+                </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</section>
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tbody tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>

@@ -1,0 +1,79 @@
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.deps.json
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.runtimeconfig.json
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.runtimeconfig.dev.json
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.dll
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.csprojAssemblyReference.cache
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.csproj.CoreCompileInputs.cache
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorAssemblyInfo.cache
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorAssemblyInfo.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.AssemblyInfoInputs.cache
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.AssemblyInfo.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.TagHelpers.input.cache
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.TagHelpers.output.cache
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorCoreGenerate.cache
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorTargetAssemblyInfo.cache
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorTargetAssemblyInfo.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.pdb
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.Views.dll
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.Views.pdb
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.Views.pdb
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.dll
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.pdb
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.csproj.CopyComplete
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Bank\Index.g.cshtml.cs
+C:\Users\DotNet Developer\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Bank\New.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.deps.json
+C:\Users\User\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.runtimeconfig.json
+C:\Users\User\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.runtimeconfig.dev.json
+C:\Users\User\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.dll
+C:\Users\User\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.pdb
+C:\Users\User\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.Views.dll
+C:\Users\User\Desktop\BankCharge\BankCharge\bin\Debug\netcoreapp2.1\BankCharge.Views.pdb
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.csprojAssemblyReference.cache
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorAssemblyInfo.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.AssemblyInfo.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.TagHelpers.input.cache
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.TagHelpers.output.cache
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorCoreGenerate.cache
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Bank\Index.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Bank\New.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.RazorTargetAssemblyInfo.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.Views.pdb
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.dll
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.pdb
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\BankCharge.csproj.CopyComplete
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Bank\EditBank.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Bank\DeleteBank.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Charge\Index.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Patner\New.g.cshtml.cs
+C:\Users\User\Desktop\BankCharge\BankCharge\obj\Debug\netcoreapp2.1\Razor\Views\Patner\Index.g.cshtml.cs

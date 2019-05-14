@@ -1,0 +1,120 @@
+﻿@model BankCharge.Models.Bank
+@{
+    ViewData["Title"] = "New";
+}
+
+
+<section class="content-header">
+    <section>
+        <h3>Add Bank</h3>
+        <div class="container">
+            <form>
+                <table class="table table-responsive  small-text box-default " id="tb" cellpadding="1" cellspacing="1">
+                    <tr class="tr-header table-responsive">
+                        <th>Bank Name</th>
+                        <th>Image</th>
+                        <th>Charge</th>
+                        <th>Card Type</th>
+                        <th>Patner Bank</th>
+                        <th><a href="javascript:void(0);" style="font-size:18px;" id="addMore" title="Add More Person"><span class="glyphicon glyphicon-plus"></span></a></th>
+
+                    </tr>
+                    <tbody>
+                        <tr class="myfield">
+
+                            <td><input type="text" id="txtName" name="Name" placeholder="Bank name.."></td>
+                            <td> <input type="file" name="ImageUrl" id="img" /></td>
+                            <td> <input type="number" name="Charge" min="100" placeholder="100" value="100"> </td>
+                            <td>
+
+
+                                <select class="js-example-basic-multiple" name="CardType" multiple="multiple">
+                                    <option value="">Select CardType</option>
+                                    <option value="MasterCard">MasterCard</option>
+                                    <option value="STC">STC </option>
+                                    <option value="Visa">Visa </option>
+                                </select>
+                            </td>
+                            @*<td>
+                                    <select required name="Patner" id="patner">
+                                        <option value="">Select Panter Bank</option>
+                                        @foreach (var item in ViewBag.BankName)
+                                        {
+                                            <option value="@item.Bank">@item.Bank </option>
+                                        }
+                                    </select>
+                                </td>*@
+
+                            <td><a href='javascript:void(0);' class='remove'><span class='glyphicon glyphicon-remove'></span></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>
+
+                    <br />
+
+                    <input type="button" id="btnSave" value="Save All" />
+
+                </div>
+            </form>
+
+        </div>
+        <div>
+            <a asp-action="Index">Back To Home</a>
+        </div>
+
+    </section>
+</section>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+
+<script>
+    //Add Dynamic Row
+    $(function () {
+
+        $('#addMore').on('click', function () {
+
+            var data = $("#tb tr:eq(1)").clone(true).appendTo("#tb");
+            data.find("input").val('');
+
+        });
+        $(document).on('click', '.remove', function () {
+            var trIndex = $(this).closest("tr").index();
+            if (trIndex > 1) {
+                $(this).closest("tr").remove();
+            } else {
+                alert("Sorry!! Can't remove first row!");
+            }
+        });
+    });
+
+    $(document).ready(function () {
+        $('.js-example-basic-multiple').select2();
+    });
+
+    $("body").on("click", "#btnSave", function () {
+        
+        var formData = new FormData();
+        $("#tb tbody").find("tr.myfield").each(function (index) {
+            formData.append("banks[" + index + "].Name", $(this).find("td:eq(0)").find("input").val());
+            formData.append("banks[" + index + "].ImageUrl", $(this).find("td:eq(1)").find("input[name='ImageUrl']")[0].files[0]);
+            formData.append("banks[" + index + "].Charge", $(this).find("td:eq(2)").find("input").val());
+            formData.append("banks[" + index + "].CardType", $(this).find("td:eq(3)").find("select").val());
+        });
+        $.ajax({
+            type: "POST",
+            url: "/Bank/New",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (r) {
+                window.location.href = "/Bank/Index";
+            }
+        });
+    });
+
+
+</script>

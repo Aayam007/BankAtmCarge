@@ -1,0 +1,43 @@
+﻿@model BankCharge.Models.Bank
+@{
+    ViewData["Title"] = "DeleteBank";
+}
+
+<h3 class="alert">Are you sure you want to delete this?</h3>
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BankId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BankId)
+        </dd>
+
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Charge)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Charge)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CardType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CardType)
+        </dd>
+        
+
+    </dl>
+    <form asp-action="DeleteBank" asp-controller="Bank" method="post">
+        <input type="hidden" asp-for="BankId" />
+        <input type="submit" value="YES" class="btn btn-danger btn-sm" /> <a href="/Bank/Index" class="btn btn-danger">NO</a>
+    </form>
+</div>

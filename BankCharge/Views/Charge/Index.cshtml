@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+<div class="col-lg-4">
+    <label> Enter Your Bank Name</label>
+<select required name="Name" id="name">
+    <option value="">Select Bank Name</option>
+    @foreach (var item in ViewBag.BankList)
+    {
+        <option value="@item.Name">@item.Name</option>
+    }
+</select>
+    </div>
+<div class=" col-lg-offset-6">
+    <label> Enter Bank Name which bank atm you want to use</label>
+    <select required name="Name" id="name">
+        <option value="">Select Bank Name</option>
+        @foreach (var item in ViewBag.BankList)
+        {
+            <option value="@item.Name">@item.Name</option>
+        }
+    </select>
+    <button>View Charge for Atm</button>
+</div>
+
+
