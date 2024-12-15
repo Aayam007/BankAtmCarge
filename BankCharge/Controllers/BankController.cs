@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BankCharge.Controllers
 {
     
-  //  [Authorize]
+    [Authorize]
     [Route("[controller]/[action]")]
     public class BankController : Controller
     {
@@ -104,8 +104,8 @@ namespace BankCharge.Controllers
                 {
                     _fileService.SavaImage(bank.ImageUrl);
                     bank.Image = bank.ImageUrl.FileName;
-                    _bankService.EditBank(bank);
                 }
+                    _bankService.EditBank(bank);
                 return RedirectToAction("Index");
             }
             return View(bank);

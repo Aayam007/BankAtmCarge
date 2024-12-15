@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\BankCharge\\BankCharge\\BankCharge.csproj": {}
+    "E:\\BankAtmCarge\\BankCharge\\BankCharge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\BankCharge\\BankCharge\\BankCharge.csproj": {
+    "E:\\BankAtmCarge\\BankCharge\\BankCharge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\BankCharge\\BankCharge\\BankCharge.csproj",
+        "projectUniqueName": "E:\\BankAtmCarge\\BankCharge\\BankCharge.csproj",
         "projectName": "BankCharge",
-        "projectPath": "C:\\Users\\User\\Desktop\\BankCharge\\BankCharge\\BankCharge.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\BankCharge\\BankCharge\\obj\\",
+        "projectPath": "E:\\BankAtmCarge\\BankCharge\\BankCharge.csproj",
+        "packagesPath": "C:\\Users\\Bishow PC\\.nuget\\packages\\",
+        "outputPath": "E:\\BankAtmCarge\\BankCharge\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bishow PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,10 +22,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -36,10 +35,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -68,10 +73,17 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

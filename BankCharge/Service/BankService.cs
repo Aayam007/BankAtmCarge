@@ -21,6 +21,7 @@ namespace BankCharge.Service
         }
 
         public IEnumerable<Bank> GetBanks()
+        
         {
             List<Bank> bankList = new List<Bank>();
 
